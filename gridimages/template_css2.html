@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>Template using gridbox</title>
+    </head>
+    <style>
+    .layer1{
+        display:flex;
+        justify-content: center;
+        width:100%;
+    }
+    .line1 {
+        background-color: #292727;
+        color:white;
+        width:100%;
+        height: 18px;
+        padding-top: 5px;
+        padding-left: 208px;
+        font-size: small;
+    
+    }
+    .line1-content{
+        background-color: #292727;
+        color:white;
+        width:100%;
+        height: 18px;
+        padding-top: 5px;
+        font-size: small;
+        padding-left:200px;
+    }
+    .layer2{
+        display:flex;
+        justify-content: center;
+        width:100%;
+    }
+    .line2{
+        background-color:white;
+        width:30%;
+        padding-left: 190px;
+     
+     
+    }
+    .line2-content{
+        display:flex;
+        width:60%;
+        padding-left:17px;
+    }
+    ul{
+                list-style:none;
+                padding:0;
+                text-align: center;
+                
+            }
+            li{
+                display:inline-block;
+                padding: 20px;
+                font-family:Verdana, sans-serif;
+              }
+            ul li:first-child {
+            background-color: rgb(28, 135, 28);
+            }
+    .line3-container1{
+                display: flex;
+                justify-content: center;
+                background-image: url(..//gridimages/placeholder.jpeg);
+                width:100%;
+                height:500px;
+                padding-top: 60px;
+    }
+    .container2 .container3{
+        width:30%;
+    }
+    
+    .card1{
+        background-color: white;
+        justify-content: center;
+        margin:20px;
+        width:300px;
+        height:380px;
+        opacity:0.7;
+
+    }
+    .heading{
+        color:black;
+        font-size:20px;
+        height:70px;
+        text-align: center;
+        background-color: rgb(215, 211, 211);
+        padding-top: 20px;
+    }  
+    .card1-content{
+        background-color: whitesmoke;
+        font-size: 17px;
+        height: 248px;
+        text-align: center;
+    } 
+    .readmore{
+        padding-top: 20px;
+        text-align: center;
+        background-color: forestgreen;
+        height: 42px;
+        color:white;
+    }
+    .card2{
+        background-color: white;
+        justify-content: center;
+        margin:20px;
+        width:300px;
+        height:380px;
+        opacity:0.7;
+    }
+    .card3{
+        background-color: white;
+        justify-content: center;
+        margin:20px;
+        width:300px;
+        height:380px;
+    }
+    .layer4{
+       
+        
+        width:100%;
+        background-color: white;
+    }
+    .layer4-container{
+        background-color: white;
+        justify-content:center;
+        width:100%;
+        display: flex;
+
+    }
+    .inner-box{
+        border: solid 1px;
+        height: 103px;
+        width: 117px;
+        padding-top: 3px;
+        padding-left: 3px;
+    }
+    .first-heading{
+        background-color: white;
+        justify-content: center;
+        text-align: center;
+        width:50%;
+        font-size: 15px;
+        padding-top:50px;
+        margin-left:187px;
+    }
+    .bigbox-content{
+        background-color: black;
+        color:white;
+        width:450px;
+        height:200px;
+        margin-top:300px;
+        opacity:0.8;
+    }
+    .layer4 a{
+        color:greenyellow;
+        padding: 4px;
+        display:block;
+        text-align: center;
+        margin:6px 120px;
+        border:solid 1px;
+    }
+    
+    .second-heading{
+        background-color: white;
+        justify-content: center;
+        text-align: left;
+        width:50%;
+        font-size: 15px;
+        padding-top:50px;
+        margin-right:180px;
+       
+        
+        
+
+    }
+    .second-heading-box1{
+        display:flex;
+        justify-content: center;
+        margin-bottom:20px;
+    }
+    .box1{
+        display:flex;
+        justify-content:center;
+        width:100px;
+        height: 100px;
+        background-image: url(..//gridimages/placeholder.jpeg);
+        
+    }
+    .inner-content{
+        padding-left:20px;
+        margin-top:-20px;
+        height:179px;
+    }
+    
+    .p1{
+        font-size: 10px;
+       
+    }
+    .p2{
+        font-size: 20px;
+    }
+    .bigbox{
+        display:flex;
+        justify-content: center;
+        width: 450px;
+        height: 500px;
+        background-image: url(..//gridimages/placeholder.jpeg);
+       
+    }
+    h1{
+        color: white;
+    }
+    .layer5{
+        background-color: lightgray;
+        text-align: center;
+        margin-top: 80px;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    .layer5 h2{
+        margin:5px;
+        font-size: 23px;
+    }
+    .layer6{
+        background-color: lightgray;
+        justify-content: center;
+        display:flex;
+        padding:30px;
+    }
+    .layer6-box1{
+        width:250px;
+        height:150px;
+        background-image: url(..//gridimages/placeholder.jpeg);
+    }
+    .layer6-box2  {
+        width:250px;
+        height:150px;
+        background-color: orange;
+        color:white;
+        font-size: 12px;
+        text-align: center;
+    }
+    .layer6-box3{
+        width:250px;
+        height:150px;
+        background-image: url(..//gridimages/placeholder.jpeg);
+        margin-left:30px;
+    }
+    .layer6-box4{
+        width:250px;
+        height:150px;
+        background-color: rgb(103, 190, 244);
+        color:white;
+        font-size: 12px;
+        text-align: center;
+    }
+    .layer6-box4 a{
+        color:white;
+        padding: 4px;
+        display:block;
+        text-align: center;
+        margin:15px 50px;
+        border:solid 1px;
+    }
+    .layer6-box2 a{
+        color:white;
+        padding: 4px;
+        display:block;
+        text-align: center;
+        margin:15px 50px;
+        border:solid 1px;
+    }
+    .layer7{
+        justify-content: center;
+        display:flex;
+        background-color:#2f2929;
+        width:100%;
+    }
+    .L7-content1{
+        width:50%;
+        color:white;
+        margin-left: 155px;
+        margin-right: 40px;
+    }
+    .L7-content2{
+        width:25%;
+        color:white;
+        margin-right: 40px;
+    }
+    .last{
+        color:yellowgreen;
+    }
+    .L7-content3{
+        width:25%;
+        color:white;
+        margin-right:160px;
+    }
+    .submit{
+        background-color: yellowgreen;
+        color:white;
+        padding:10px 30px;
+    }
+    .email{
+        background-color: black;
+        padding: 10px 30px;
+    }
+    .logos{
+        background-color: black;
+        display:flex;
+        padding: 10px;
+        margin-top: 20px;
+        justify-content: space-between;
+
+    }
+    
+    
+    
+    </style>    
+    <body>
+        <div class="layer1">
+            <div class="line1">
+            LINK 1|LINK 2|LINK 3|LINK 4|LINK 5
+            </div>
+            <div class="line1-content">
+            &#128222;+00 &nbsp;(123)  &nbsp; 456 &nbsp;7890| &nbsp;&#9993;INFO@DOMAIN.COM
+            </div>
+        </div>
+   
+        <div class="layer2">
+            <div class="line2">
+                <img src="..//gridimages/flomic.jpg" alt="flomic">
+            </div>
+            <div class="line2-content">
+                    <ul>
+                        <li>HOME</li>
+                        <li>PAGES</li>
+                        <li>DROPDOWN</li>
+                        <li>LINK TEXT</li>
+                        <li>LINK TEXT</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="layer3">
+            <div class="line3-container1">
+                <div class="card1">
+                    <div class="heading">
+                        QUISQUE VEHICULA<br>URNA AMET
+                    </div> 
+                    <div class="card1-content">
+                        <br><br>ullamcorper mauris sit amet<br><br>
+                        sed eget ultricies sem<br><br>
+                        proin quis lacus egestas<br><br>
+                        adipis cing ornare<br><br>
+                        donec lactus convallis rhoncus
+                        
+                    </div>  
+                    <div class="readmore">
+                        READMORE &nbsp;>>
+                    </div> 
+                </div>
+              
+                <div class="container2">
+                    <div class="card2">
+                        <div class="heading">
+                            ALIQUAM PURUS URNA<br>PORTA FAUCIBUS
+                        </div> 
+                        <div class="card1-content">
+                            <br><br>ullamcorper mauris sit amet<br><br>
+                            sed eget ultricies sem<br><br>
+                            proin quis lacus egestas<br><br>
+                            adipis cing ornare<br><br>
+                            donec lactus convallis rhoncus
+                            
+                        </div>  
+                        <div class="readmore">
+                            READMORE  &nbsp;>>
+                        </div> 
+                    </div>
+                </div>
+                <div class="container3">
+                    <div class="card3">
+                        <div class="heading">
+                           PROIN ULTRICIES DUI<br>LEO EGESTAS AUGUE
+                        </div> 
+                        <div class="card1-content">
+                            <br><br>ullamcorper mauris sit amet<br><br>
+                            sed eget ultricies sem<br><br>
+                            proin quis lacus egestas<br><br>
+                            adipis cing ornare<br><br>
+                            donec lactus convallis rhoncus
+                            
+                        </div>  
+                        <div class="readmore">
+                            READMORE  &nbsp;>>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layer4">
+            <div class="layer4-container">
+                <div class="first-heading">
+                    <h2>MAECENAS LIBERO NUNC EU ERAT</h2>
+                    <div class="bigbox">
+                        <div class="bigbox-content">
+                            <h1>URNA SIT AMIT PULVINAR</h1>
+                            
+                            <p class="p2">Aenean sember elementum tellus,ut placeret
+                                leo,Qusque vehiculla urna sit emet</p><br>
+                            <a href="">READ MORE </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="second-heading">
+                 <h2>ETIAM EROS NULLA POSUERE</h2>
+                    <div class="second-heading-box1"> 
+                        <div class="inner-box">
+                             <div class="box1">
+
+                             </div>
+                        </div>
+                        <div class="inner-content">
+                        <h2>PHASELLUS MASSA FELIS IN</h2>
+                        <p class="p1">By A Name  Friday, 6 April 2045</p>
+                        <p class="p2">Aenean sember elementum tellus,ut placeret
+                        leo,Qusque vehiculla urna sit emet</p>
+                        <a href="">READ MORE </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="second-heading-box1"> 
+                        <div class="inner-box">
+                            <div class="box1">
+
+                            </div>
+                    
+                        </div>
+                        <div class="inner-content">
+                        <h2>MORBI CONSECTETUR NISI</h2>
+                        <p class="p1">By A Name  Friday, 6 April 2045</p>
+                        <p class="p2">Aenean sember elementum tellus,ut placeret
+                        leo,Qusque vehiculla urna sit emet</p>
+                        <a href="">READ MORE </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="second-heading-box1"> 
+                        <div class="inner-box">
+                            <div class="box1">
+
+                            </div>
+                        </div>
+                        <div class="inner-content">
+                        <h2>PROIN ULTRA FEUGIAT VITAE</h2>
+                        <p class="p1">By A Name  Friday, 6 April 2045</p>
+                        <p class="p2">Aenean sember elementum tellus,ut placeret
+                        leo,Qusque vehiculla urna sit emet</p>
+                        <a href="">READ MORE </a>
+                        </div>
+                    </div>
+                    <hr> 
+                </div>
+            </div>
+        </div>
+        <div class="layer5">
+            <h2>DONEC FACILISIS VOLUTPAT LIGULA NEC EGESTAS</h2>
+                Integer varius enim id augue faucibus mattis,Phellentesque scelerisque 
+                nibh eu mi convallis,ac feugiat nulla tincidunt.
+        </div>
+        <div class="layer6">
+            <div class="layer6-box1">
+               
+            </div>
+            <div class="layer6-box2">
+                <h2>QUISQUE VEHICULA URNA SIT AMET PULVINAR DAPIBUS</h2>
+                <a href="">READ MORE </a>
+                
+            </div>
+            <div class="layer6-box3">
+               
+            </div>
+            <div class="layer6-box4">
+                <h2>INTEGER VARIUS ENIM ID AUGUE FAUCIBUS MATTIS</h2>
+                <a href="">READ MORE </a>
+            </div>
+        </div>
+        <div class="layer7">
+            <div class="L7-content1">
+               <h3>LOREM IPSUM DOLOR</h3><hr>
+               <p>Donec sed ultricies eros, Nulla facilisi. Aliquam purus urna, porta non faucibus nec,
+                luctus vitae ante. Suspendise potenti. Morbi sollicitudin viverra urna, vel auctor purus 
+                volutpuat vel.<br><br>
+                <img src="//www.gstatic.com/images/icons/material/system_gm/1x/place_gm_blue_24dp.png">
+                Street Name and Number,Town,Postcode/zip<br>
+                &#128222;+00(123) 456 7890<br>
+                &#128231;info@domain.com
+
+            </div>
+            <div class="L7-content2">
+                <h3>QUICK LINKS</h3><hr>
+                
+                <div class="last">Home Page<br><br>
+                    Blog<br><br>
+                    Gallery<br><br>
+                    Portfolio<br><br>
+                   Contact Us
+                </div>
+            </div>
+            <div class="L7-content3">
+                <h3>KEEP IN TOUCH</h3><hr>
+                <input type="text" placeholder="Email" class="email"><br><br>
+                <button type="submit" class="submit">SUBMIT</button>
+                <div class="logos">
+                    <img src="..//gridimages/fb.png" alt="" width="20" height="20"><br>
+                    <img src="..//gridimages/pin.png" alt="" width="20" height="20"><br>
+                    <img src="..//gridimages/twitter.png" alt="" width="20" height="20"><br>
+                    <img src="..//gridimages/linkedin.png" alt="" width="20" height="20"><br>
+                    <img src="..//gridimages/g+.png" alt="" width="20" height="20"><br>
+                    <img src="..//gridimages/wifi.png" alt="" width="20" height="20">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
